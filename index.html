@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Danito</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/daniel.jpg" alt="">
+            </div>
+            <h1>DANIEL CHAVEZ</h1>
+            <h2>Diseñador Web Freelance - Experto UI/UX</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/dany.d.chavez.7?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.link/g3j26c" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/danito1509?igsh=Y3ludGVhaHBwcmtt" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/daniel-chavez-526a26172?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Daniel Chavez.</span> Estudiante de la Facultad Nacional de Ingenieria de la carrera de Ingenieria de Sistemas, apasionado por el diseño web. Satisfaciendo necesidades y enfoques que quieran ser reflejados en una Pagina Web.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            15-09-1993
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            591 78205082
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            danito34795@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Ciudad de Oruro. Av. Villarroel y calle Oblitas Nº 18
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="img/curriculum.pdf" download>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidade Tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso photoshop">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso wordpress">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidadades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Educacion Secundaria</h4>
+                        <span class="casa">Col. Guido Villagomez Secundaria</span>
+                        <span class="fecha">2007 - 2010</span>
+                        <p>Estudiante destacado con un historial académico sobresaliente, reconocido como uno de los mejores alumnos en la mayoría de mis cursos. Obtuve menciones honoríficas por excelencia académica y participé activamente en proyectos educativos que fortalecieron mis habilidades de liderazgo, trabajo en equipo y compromiso con la calidad.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnico Medio</h4>
+                        <span class="casa">Col. Guido Villagomez Secundaria</span>
+                        <span class="fecha">2009 - 2010</span>
+                        <p>Durante mi etapa escolar, me formé como Técnico Medio en manejo de paquetes Office, desarrollando un dominio avanzado en herramientas como Word, Excel y PowerPoint, fortaleciendo mis habilidades técnicas y mi capacidad para aplicar soluciones tecnológicas en diversos proyectos. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingenieria de Sistemas</h4>
+                        <span class="casa">Facultad Nacional de Ingenieria</span>
+                        <span class="fecha">2016-Actualidad</span>
+                        <p>Estudiante en curso de la carrera de Ingeniería de Sistemas, con especialización en diseño y desarrollo de páginas web. A pesar de enfrentar interrupciones en mis estudios por motivos personales, he demostrado resiliencia y compromiso al retomarlos, fortaleciendo mis habilidades en diseño web, UX/UI y desarrollo front-end. Cuento con experiencia en proyectos prácticos, aplicando tecnologías como HTML, CSS, JavaScript y frameworks modernos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Diseñador Freelance</h4>
+                        <span class="casa">PROYECTO UTO-MATERIAL</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Desarrollé 'UTO Material', un repositorio académico para la Universidad Técnica de Oruro, utilizando FlutterFlow. Esta plataforma permite a los estudiantes de todas las facultades compartir y acceder a recursos educativos, como exámenes y prácticas anteriores. Mi rol incluyó el diseño y desarrollo completo de la plataforma, implementando funcionalidades de carga y descarga de materiales, y mejorando el acceso a recursos académicos. Este proyecto fomenta la colaboración estudiantil y el aprendizaje colectivo, proporcionando una herramienta útil y accesible para la comunidad universitaria.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>DISEÑO WEB </h4>
+                        <span class="casa">Diseño Web</span>
+                        <span class="fecha">2024 - Presente</span>
+                        <p>A través del desarrollo de 'UTO Material', un repositorio académico para la Universidad Técnica de Oruro utilizando FlutterFlow, descubrí mi pasión por el diseño web. Este proyecto no solo me permitió crear una plataforma funcional para el intercambio de recursos académicos, sino que también me orientó hacia el diseño web, motivándome a especializarme en la creación de interfaces intuitivas y accesibles. La experiencia adquirida en este proyecto consolidó mi interés por el desarrollo front-end y el diseño de experiencias de usuario (UX/UI), áreas que actualmente son el enfoque de mi formación profesional.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>RECEPCION</h4>
+                        <span class="casa">PRODMETAL - FUNDICION</span>
+                        <span class="fecha">2021-2022</span>
+                        <p>
+                            * Coordinación de actividades de recepción y gestión, Atención telefónica para brindar información, Colaboración con departamentos internos.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Av. Antofagasta y Calle Oblitas #18
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 591-78205082
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: danito34795@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/dany.d.chavez.7?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.link/g3j26c" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/danito1509?igsh=Y3ludGVhaHBwcmtt" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-chavez-526a26172?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
